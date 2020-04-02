@@ -9,7 +9,6 @@ jobs:
   docker-build:
     name: Build and push docker container
     runs-on: ubuntu-latest
-    needs: test
     steps:
     - name: Check out
       uses: actions/checkout@v2      
