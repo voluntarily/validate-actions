@@ -15,7 +15,9 @@ jobs:
     - name: Use Node 12
       uses: actions/setup-node@v1
     - name: Build
-      run: ./test
+      run: |
+        chmod +x ./test
+        ./test
   
       env:
         AWS_ACCOUNT_ID: 585172581592
